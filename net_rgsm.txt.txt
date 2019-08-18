@@ -1,0 +1,45 @@
+conv0	0 weights		total weights
+0	0.0			432
+conv1	0 weights		total weights
+9	1296.0			2304
+conv2	0 weights		total weights
+6	864.0			2304
+conv3	0 weights		total weights
+11	1584.0			2304
+conv4	0 weights		total weights
+8	1152.0			2304
+conv5	0 weights		total weights
+16	2304.0			2304
+conv6	0 weights		total weights
+16	2304.0			2304
+conv7	0 weights		total weights
+5	1440.0			4608
+conv8	0 weights		total weights
+7	2016.0			9216
+conv9	0 weights		total weights
+16	512.0			512
+conv10	0 weights		total weights
+11	3168.0			9216
+conv11	0 weights		total weights
+12	3456.0			9216
+conv12	0 weights		total weights
+13	3744.0			9216
+conv13	0 weights		total weights
+9	2592.0			9216
+conv14	0 weights		total weights
+0	0.0			18432
+conv15	0 weights		total weights
+0	0.0			36864
+conv16	0 weights		total weights
+30	1920.0			2048
+conv17	0 weights		total weights
+2	1152.0			36864
+conv18	0 weights		total weights
+0	0.0			36864
+conv19	0 weights		total weights
+0	0.0			36864
+conv20	0 weights		total weights
+0	0.0			36864
+171/675
+channel sparsity(%): 25.333333333333332
+weight sparsity(%): 10.917056420579007
