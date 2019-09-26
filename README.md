@@ -11,7 +11,7 @@ B. Yang, J. Lyu, S. Zhang, Y-Y Qi, J. Xin “Channel Pruning for Deep Neural Net
 #### Instruction:
 The available models are in the models folder and can be specified in main.py. Run main.py to train the model, specify the method and corresponding parameters. The available training options are: 
 
-default (standard SGD)
+default: standard SGD
 
 rvsm: hyper-parameters are --beta and --lamb, default values are [1e-2, 1e-6]
 
