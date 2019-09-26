@@ -9,12 +9,20 @@ T. Dinh, J. Xin, “Convergence of a relaxed variable splitting method for learn
 B. Yang, J. Lyu, S. Zhang, Y-Y Qi, J. Xin “Channel Pruning for Deep Neural Networks via a Relaxed Group-wise Splitting Method”, In Proc. of 2nd International Conference on AI for Industries, Laguna Hills, CA, Sept. 25-27, 2019
 
 #### Instruction:
-The available models are in the models folder and can be specified in main.py. 
+The available models are in the models folder and can be specified in main.py. Run main.py to train the model, specify the method and corresponding parameters. The available training options are: 
 
-Run main.py to train the model, specify the method and corresponding parameters. The available training options are default (standard SGD), RVSM, RGSM, and ADMM.
+default (standard SGD)
+
+rvsm: hyper-parameters are --beta and --lamb, default values are [1e-2, 1e-6]
+
+rgsm: hyper-parameters are --beta1, --lamb1, and --lamb2, default value are [1, 1e-2, 1e-5]
+
+admm: hyper-parameters are --pcen and --sparsity ('elem' or 'channel'), default values are [80, elem]
+
+
 ```
-python main.py -method default
-python main.py -method rvsm -beta 5e-2 -lamb 1e-5
-python main.py -method rgsm -beta 1e-2 -lamb1 1e-5 -lamb2 1e-3
-python main.py -method admm -pcen 60 -sparsity channel
+python main.py --method default
+python main.py --method rvsm --beta 5e-2 --lamb 1e-6
+python main.py --method rgsm --beta1 1 --lamb1 1e-2 --lamb2 1e-5
+python main.py --method admm --pcen 60 --sparsity channel
 ```
