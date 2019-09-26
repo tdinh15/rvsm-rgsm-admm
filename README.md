@@ -22,7 +22,7 @@ admm: hyper-parameters are --pcen and --sparsity ('elem' or 'channel'), default 
 
 ```
 python main.py --method default
-python main.py --method rvsm --beta 5e-2 --lamb 1e-6
-python main.py --method rgsm --beta1 1 --lamb1 1e-2 --lamb2 1e-5
+python main.py --method rvsm --beta 5e-2 --lamb 1e-5
+python main.py --method rgsm --beta1 1 --lamb1 5e-3 --lamb2 2e-5
 python main.py --method admm --pcen 60 --sparsity channel
 ```
