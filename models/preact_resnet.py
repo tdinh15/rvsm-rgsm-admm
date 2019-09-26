@@ -192,10 +192,6 @@ def en_preactresnet44_cifar(**kwargs):
 def en_preactresnet38_cifar(**kwargs):
     model = Ensemble_PreAct_ResNet_Cifar(PreActBasicBlock, [6, 6, 6], **kwargs)
     return model
-    
-def en_preactresnet86_cifar(**kwargs):
-    model = Ensemble_PreAct_ResNet_Cifar(PreActBasicBlock, [14, 14, 14], **kwargs)
-    return model
 
 class AttackPGD(nn.Module):
     """
@@ -267,10 +263,5 @@ def ResNet44():
     
 def ResNet38(): 
     basic_net = en_preactresnet38_cifar(num_ensembles=1, noise_coef=0)
-    model = AttackPGD(basic_net, config)
-    return model
-    
-def ResNet86(): 
-    basic_net = en_preactresnet86_cifar(num_ensembles=1, noise_coef=0)
     model = AttackPGD(basic_net, config)
     return model
