@@ -17,3 +17,25 @@ python main.py -method rvsm -beta 5e-2 -lamb 1e-5
 python main.py -method rgsm -beta 1e-2 -lamb1 1e-5 -lamb2 1e-3
 python main.py -method admm -pcen 60 -sparsity channel
 ```
+
+For `alpha=0.5`:
+
+|Method   |alpha   |num_bits   |Size (KB)   |Accuracy   |AUC   |AP   |f1   |
+|---|---|---|---|---|---|---|---|
+|baseline   |0.5   |n/a   |3224   |91.8   | 0.963 | 0.932 |    0.867 |
+|PTQ   |0.5   |4   |372   |88.8   | 0.937 | 0.891 |    0.819 |
+|QGT   |0.5   |4   |372   |91.5   | 0.960 | 0.928 |    0.864 |
+|PTQ   |0.5   |2   |200   |68.4   | 0.637 | 0.393 |    0.552 |
+|QGT   |0.5   |2   |200   |87.3   | 0.929 | 0.881 |    0.792 |
+
+
+and for `alpha=0.25`:
+
+
+|Method |num_bits   |Size (KB)   |Accuracy   |AUC   |AP   |f1   |
+|---|---|---|---|---|---|---|---|
+|baseline   |n/a   |1440   |90.4   | 0.952 | 0.925 |    0.843 |
+|PTQ   |4   |133   |89.1   | 0.941 | 0.91  |    0.821 |
+|QGT   |4   |133   |90.3   |0.952   |0.924   |0.838   |
+|PTQ   |2   |81   |68.4   | 0.654 | 0.41  |    0.545 |
+|QGT   |2   |81   |87.3   | 0.928 | 0.884 |    0.792 |
