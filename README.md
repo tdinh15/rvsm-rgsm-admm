@@ -27,7 +27,7 @@ python main.py --method rgsm --beta1 1 --lamb1 5e-3 --lamb2 2e-5
 python main.py --method admm --pcen 60 --sparsity channel
 ```
 
-For `alpha=0.5`:
+#### For `alpha=0.5`:
 
 |Method   |alpha   |num_bits   |Size (KB)   |Accuracy   |AUC   |AP   |f1   |
 |---|---|---|---|---|---|---|---|
@@ -38,7 +38,7 @@ For `alpha=0.5`:
 |QGT   |0.5   |2   |200   |87.3   | 0.929 | 0.881 |    0.792 |
 
 
-and for `alpha=0.25`:
+#### For `alpha=0.25`:
 
 
 |Method |num_bits   |Size (KB)   |Accuracy   |AUC   |AP   |f1   |
