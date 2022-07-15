@@ -27,4 +27,5 @@ python main.py --method rgsm --beta1 1 --lamb1 5e-3 --lamb2 2e-5
 python main.py --method admm --pcen 60 --sparsity channel
 ```
 
-## BLOG!!!https://medium.com/@tdinh15/80-days-to-get-into-faang-5c77f27d5224
+## BLOG!!!
+https://medium.com/@tdinh15/80-days-to-get-into-faang-5c77f27d5224
